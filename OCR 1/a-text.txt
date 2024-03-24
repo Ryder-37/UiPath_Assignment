@@ -1,0 +1,124 @@
+UNIT 1 BLOCKCHAIN
+Distributed DBMS - Limitations of Distributed DBMS:
+» Complexity: Distributed database systems are inherently more complex than
+centralized systems, making them more challenging to design, implement, and
+maintain.
+» Data Inconsistency: Maintaining data consistency across multiple nodes in a
+distributed system is a significant challenge, as data updates need to be
+propagated to all nodes in a timely and reliable manner.
+» Performance: Distributed systems can experience performance issues due to
+network latency, increased communication overhead, and the need for data
+replication and synchronization.
+» Security: With data distributed across multiple locations, ensuring data security
+and access control becomes more challenging, as potential vulnerabilities and
+attack vectors increase.
+» Cost: Implementing a distributed database system often requires additional
+hardware, software, and network infrastructure, leading to higher overall costs.
+» Fault Tolerance: Distributed systems must be designed to handle node failures,
+network partitions, and other potential issues, which can be complex and
+resource-intensive.
+» Data Integration: Integrating data from multiple heterogeneous sources in a
+distributed environment can be a significant challenge, requiring standardization
+and data transformation processes.Introduction to Blockchain:
+History:
+1. The concept of blockchain was introduced in 2008 by an anonymous person or group
+known as Satoshi Nakamoto in the Bitcoin white paper.
+2. Bitcoin, the first blockchain-based cryptocurrency, was launched in 2009 and served
+as the initial practical implementation of blockchain technology.
+3. Over time, the potential of blockchain technology for applications beyond
+cryptocurrencies was recognized, leading to its adoption in various industries.
+Definition:
+1. Ablockchain is a decentralized, distributed digital ledger that records transactions
+across multiple computers or nodes in a network.
+2. ltis essentially a continuously growing list of records, called blocks, which are linked
+and secured using cryptography.
+3. Each block contains a cryptographic hash of the previous block, a timestamp, and
+transaction data, forming an immutable and tamper-evident chain.
+Distributed Ledger:
+1. Adistributed ledger is a database that is spread across multiple locations or nodes in
+a decentralized network.
+2. lt allows for transparent and secure record-keeping without the need for a central
+authority or intermediary.
+3. Participants in the network can access, verify, and update the ledger through a
+consensus mechanism.Blockchain Categories:
+» Public Blockchain:
+» Public blockchains are open and permissionless, allowing anyone to join the
+network, participate in the consensus process, and access the full transaction
+history.
+» Examples: Bitcoin, Ethereum.
+» Private Blockchain:
+» Private blockchains are permissioned and controlled by a single organization or
+entity.
+» Access to the network and the ability to participate in the consensus process are
+restricted.
+» Private blockchains offer enhanced privacy and control but sacrifice the
+decentralized nature of public blockchains.
+» Consortium Blockchain:
+» Consortium blockechains are semi-decentralized and governed by a group of
+organizations or entities.
+» The consensus process is controlled by a pre-selected set of nodes or validators.
+» Consortium blockchains strike a balance between decentralization and control,
+often used in enterprise or industry-specific applications.
+» Blockchain Network and Nodes:
+» Ablockchain network consists of multiple nodes {computers or devices)
+connected to each other in a peer-to-peer fashion.
+» Each node participates in the validation and consensus process by verifying and
+adding new blocks to the chain.
+» Nodes can be classified as full nodes {maintaining the entire blockchain) or light
+nodes {maintaining a subset of the blockchain).
+» Peer-to-Peer Network:» Blockchain networks operate on a peer-to-peer (P2P) architecture, where nodes
+communicate directly with each other without a central server or intermediary.
+» This decentralized architecture enhances resilience, as the network can
+continue functioning even if some nodes fail or leave the network.
+» Peer-to-peer networks enable the propagation of transactions and blocks across
+the network in a distributed manner.
+Mining Mechanism:
+» Mining is the process of validating and adding new transactions to the
+blockchain by solving complex cryptographic puzzles.
+» Miners {specialized nodes) compete to solve these puzzles using computational
+power, and the first miner to solve the puzzle gets to add a new block to the chain
+and earn a reward.
+» Mining serves two main purposes: validating transactions and introducing new
+cryptocurrency units into circulation.
+» The mining process is designed to be resource-intensive and competitive,
+ensuring the security and integrity of the blockchain.
+Generic Elements of Blockchain:
+» Distributed Ledger: A decentralized database that records transactions across
+multiple nodes.
+» Cryptography: The use of cryptographic techniques to secure transactions and
+ensure data integrity.
+» Consensus Mechanism: A set of rules and algorithms used to achieve
+agreement among nodes on the state of the blockchain.
+» Decentralization: The absence of a central authority or intermediary, enabling
+direct peer-to-peer interactions.
+» [Immutability: Once data is recorded on the blockchain, it becomes virtually
+impossible to alter or tamper with it.
+» Transparency: The ability for all participants to view and verify the transactions
+recorded on the blockchain.Features of Blockchain:
+» Decentralization: No central authority or intermediary is required, enabling direct
+peer-to-peer transactions.
+» Transparency: All transactions are visible to all participants, ensuring
+transparency and auditability.
+» [Immutability: Once data is recorded on the blockchain, it cannot be altered or
+deleted, providing tamper-resistance.
+» Security: Blockchain leverages cryptographic techniques to secure transactions
+and maintain data integrity.
+» Consensus: The network nodes follow a consensus mechanism to agree on the
+state of the blockchain, ensuring consistency.
+» Traceability: Each transaction is traceable and can be tracked across the entire
+blockchain, providing a clear audit trail.
+Types of Blockchain:
+» Public Blockchains: Open and permissionless networks where anyone can
+participate in the consensus process and access the full transaction history
+{e.g., Bitcoin, Ethereum).
+» Private Blockchains: Controlled and permissioned networks where access and
+participation are restricted to a specific organization or group {e.g., enterprise
+blockchains).
+» Consortium Blockchains: Semi-decentralized networks governed by a group of
+organizations or entities, often used in industry-specific applications.
+» Permissioned Blockchains: Blockchains where participants are vetted and
+granted specific privileges or roles, offering more control and privacy.
+» Permissionless Blockchains: Open and decentralized blockchains where anyone
+can join and participate without prior authorization.
+» Hybrid Blockchains: Combining elements of public and private blockchains,
+enabling selective data sharing and controlled access.
