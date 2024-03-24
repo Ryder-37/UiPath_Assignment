@@ -1,0 +1,382 @@
+Unit 4: JSON and JQuery
+JavaScript JSON
+» JSON is a format for storing and transporting data.
+» JSON is often used when data is sent from a server to a web page.
+What is JSON?
+» JSON stands for JavaScript Object Notation
+» JSON is a lightweight data interchange format
+» JSON is language independent *
+» JSON is "self-describing" and easy to understand
+Characteristics of JSON
+* Itis Human-readable and writable.
+» tis light weight text based data interchange format which means, it is simpler to
+read and write when compared to XML.
+» Itis widely used as data storage and communication format on the web.
+Though it is derived from a subset of JavaScript, yet it is Language independent. Thus, the
+code for generating and parsing JSON data can be written in any other programming
+language.
+This JSON syntax defines an employees object: an array of 3 employee records (objects):
+{
+"employees™:[
+{"firstName":"John", "lastName":"Doe"},
+{"firstName": "Anna", "lastName":"Smith"},
+{"firstName": "Peter", "lastName":"Jones"}
+]
++
+JSON Syntax Rules
+« Data is in name/value pairs
+« Data is separated by commas
+« Curly braces hold objects
+« Square brackets hold arrays
+JSON Data - A Name and a Value
+JSON data is written as name/value pairs, just like JavaScript object
+properties.
+A name/value pair consists of a field name (in double quotes), followed by a
+colon, followed by a value:"firstName": "John"
+NB: JSON names require double quotes. JavaScript names do not.
+JSON Objects
+JSON objects are written inside curly braces.
+Just like in JavaScript, objects can contain multiple name/value pairs:
+{"firstName": "John", "lastName":"Doe"}
+JSON Arrays
+JSON arrays are written inside square brackets.
+Just like in JavaScript, an array can contain objects:
+"employees™:[
+{"firstName":"John", "lastName":"Doe"},
+{"firstName": "Anna", "lastName":"Smith"},
+{"firstName": "Peter", "lastName":"Jones"}
+]
+In the example above, the object "employees" is an array. It contains three
+objects.
+Each object is a record of a person (with a first name and a last name).
+jQuery getJSON() Method
+The $.get]SON(} method is a function provided by the jQuery library, which is commonly
+used for making HTTP GET requests to retrieve JSON data from a server. JSON {JavaScript
+Object Notation) is a lightweight data interchange format that is often used to transmit data
+between a web server and a web client (e.g., a web browser).
+Here's the basic syntax of the $.getJSON() method:
+Bleetosoniusl, cota, cwessss)d
+» url: The URL of the JSON data you want to retrieve from the server.* data (optional): A set of key-value pairs that can be sent to the server along with the
+request. This is typically used for passing additional information to the server, such
+as query parameters.
+» success: A callback function that will be executed if the request is successful. The
+function is passed the data retrieved from the server as an argument.
+Here's an example of how to use $.getISON{) to fetch JSON data from a server and process
+it:
+Bdereeosonfitac ens s / 7CRammLe . 00m EP JTRS. 10a lh reactions] 1
+[77 weils soheniEs Gon 55 CERNER Git U0 Seemest 15
+[v7 veseay mon
+[Jeenserepicdneecana
+C177 we EEREOED
+You can use the $.getJSON() method to retrieve data from an API, web service,
+or any server that provides JSON-formatted responses. It's a convenient way to
+make asynchronous requests and work with JSON data in your web applications.
+A brief introduction to JSON POST
+methods.
+HTTP POST Method:
+The POST method is one of the HTTP methods used for sending data to a server.
+It's often used to submit data to a server for further processing or to create a
+new resource on the server.
+POST requests typically include a request body that contains data to be sent to
+the server. This data can be in various formats, with JSON being a popular choice
+due to its simplicity and flexibility.
+JSON (JavaScript Object Notation):
+JSON is a lightweight data format that is easy for both humans and machines
+to read and write.
+It uses a key-value pair structure, where data is organized as attribute-value
+pairs.JSON data can represent complex data structures, including objects and arrays,
+making it suitable for a wide range of use cases.
+JSON POST Request:
+When you want to send data to a server using a POST request, you can include
+a JSON payload in the request body.
+The content type of the request header should be set to "application/json" to
+indicate that the data is in JSON format.
+Example of a JSON POST request in JavaScript using the Fetch API:
+FeEcfiv bites s /7esample . gom/apl/ tesoures hI
+Onctsssp Jr rosTig
+OOreacersg 1
+[CJreentent=1vee’E J avwlication/Isen
+[JeodHE 1oNHst rina tak IRIE IF varus 1; 1kevZE JV vatvez [I]
+BEEElinearonce <5 sogsence discal]
+BERGAfjsrRa ==]
+[Cr7 tients @e scceence ERA Fueh SO SCEweHE
+EEE fiezeee ==
+[v7 cence ans
+Server-Side Handling:
+On the server side, you need to have code that can parse the incoming JSON
+data and process it accordingly.
+Popular web frameworks and libraries in various programming languages
+provide tools for handling JSON data easily.
+JSON POST methods are commonly used for tasks like submitting forms,
+sending data to APIs, and interacting with web services. They provide a
+structured and flexible way to transmit data between clients and servers in a
+format that is both human-readable and machine-readable.
+JSON POST methods are commonly used in web development and API
+interactions to send data from a client to a server using the HTTP POST
+request method. This method is particularly useful when you need to transmitstructured data in JSON format. Here are some common use cases for JSON
+POST methods:
+1. Data Submission in Web Forms:
++ When a user submits a web form, the form data can be collected,
+converted to a JSON format, and sent to a server using a JSON
+POST request. This is useful for user registration, login, contact
+forms, and more.
+2. API Data Creation or Update:
++ Many web services and APIs accept JSON data in POST requests to
+create or update resources. For example, you can use a JSON
+POST request to create a new user account, update a profile, or
+add a new item to a shopping cart in an e-commerce system.
+3. Sending Data to a Server:
++ You can use JSON POST to send data to a server for processing,
+such as sending user-generated content, like comments or posts,
+to a content management system.
+4. Real-time Data Updates:
++ Web applications often use JSON POST to send and receive real-
+time data updates, like chat messages in a chat application, game
+moves, or collaborative editing changes.
+5. Data Import:
+« JSON POST is used to import data from external sources into a
+server's database. For example, you can import customer records
+or product information in JSON format.
+6. Interacting with Web APIs:
++ When working with third-party APIs {e.g., social media, payment
+gateways, geolocation services), JSON POST requests are
+commonly used to communicate with these services, such as
+posting a tweet, making a payment, or retrieving location
+information.
+7. File Uploads:
+« JSON POST methods can be used in conjunction with file uploads.
+The JSON data can include information about the uploaded file,
+while the file itself is sent as part of the request body.
+8. Authentication and Authorization:« JSON POST requests are often used in the authentication process,
+such as sending login credentials (e.g., username and password) to
+a server to obtain an access token.
+9. Webhooks:
+« JSON POST requests are commonly used for webhooks, where a
+server sends JSON data to a specified URL to notify another
+system about an event, such as a payment confirmation or a
+change in a monitored resource.
+10.Database Operations:
+« JSON POST can be used to send queries or updates to a database
+server, which can then process and respond to the request.
+In all of these use cases, the key is to ensure that the data sent in the
+JSON format is correctly structured and adheres to the expected data
+format by the server or API you are interacting with. Proper validation
+and security measures should also be in place to protect against
+potential vulnerabilities like data injection or unauthorized access.
+The HTML DOM (Document Object
+Model)
+When a web page is loaded, the browser creates a Document Object Model
+of the page.
+The HTML DOM model is constructed as a tree of Objects:The HTVIL DOM Tree of Objects
+| Document |
+Root element:
+<html
+|
+| |
+Element: Element:
+<head> <body
+| : |
+Element: Attribute: Element: Element:
+<title> “href” <a <hl>
+Text: Text: Text:
+My title” “My link” “My header”
+With the object model, JavaScript gets all the power it needs to create
+dynamic HTML:
+« JavaScript can change all the HTML elements in the page
+« JavaScript can change all the HTML attributes in the page
+« JavaScript can change all the CSS styles in the page
+« JavaScript can remove existing HTML elements and attributes
+« JavaScript can add new HTML elements and attributes
+« JavaScript can react to all existing HTML events in the page
+« JavaScript can create new HTML events in the page
+The Document Object Model (DOM) is a programming interface for web
+documents. It represents the structure of a web page as a tree-like structure
+where each element on the web page is represented as an object in the tree.
+The DOM allows web developers to interact with and manipulate the content
+and structure of a web page using programming languages like JavaScript.
+Key concepts and features of the DOM include:
+Tree Structure: The DOM represents a web page as a hierarchical tree
+structure, where each node in the tree corresponds to an element on the page,
+such as HTML elements (e.g., headings, paragraphs, images), attributes, and
+text content. The root of this tree is the document object, which represents
+the entire web page.Objects: Each element, attribute, and piece of text content in the DOM is
+represented as a JavaScript object. These objects can be accessed and
+manipulated using JavaScript.
+HTML Elements: HTML elements are represented as objects with properties
+and methods. For example, you can access and change the content of an HTML
+element, change its attributes, or add and remove elements from the page.
+Events: The DOM allows you to add event listeners to elements, enabling you
+to respond to user interactions, such as clicks, keyboard input, and mouse
+movements. Event handling is a fundamental part of building interactive web
+applications.
+Dynamic Updates: With the DOM, you can dynamically update the content
+and structure of a web page without having to reload the entire page. This is a
+key feature in modern web applications and is commonly used in single-page
+applications (SPAs).
+Cross-Browser Compatibility: The DOM is designed to work consistently across
+different web browsers, so you can write JavaScript code that interacts with
+the DOM and expect it to work on various browsers.
+Traversal and Manipulation: You can navigate the DOM tree by moving
+between nodes, accessing parent and child nodes, and manipulating the
+content and structure of the web page. This enables you to create, modify, or
+delete elements as needed.
+Here's a simple example of using JavaScript to access and manipulate the
+DOM:
+RYE EDT
+Cramer Benak mimes
+[IR ee Siar SERe, WN
+[erm 165 mE tai SEnacn TEsaANae]
+Orem1 MI HEEEAG WRG POY EUETERER 157 JHE
+I SONS RECA © CENTRE cet crantEIeH(aswE tena
+1 HERR & GRIER CHEAR BICREAGRE $6 RA 1SNRReR
+I ERE. AcRInvORtListaner (VEILIER, rimetieomiol
+I AY OEGGE AS WEEE Gif BND LFYekiTs]
+I IFRS, ASRERRRER © “EELS, Dol
+—
+EATEN
+In this example, JavaScript is used to access the elements with specific
+IDs and modify their content when the button is clicked, demonstrating
+the fundamental concepts of DOM manipulation. The DOM is a core part
+of web development and is essential for building dynamic and
+interactive web pages and applications.
+REST API
+A REST API, which stands for Representational State Transfer Application
+Programming Interface, is a set of rules and conventions for building and
+interacting with web services. It is an architectural style that defines a
+set of constraints and principles for designing networked applications.
+Here's a brief introduction to REST APIs:
+1. Resources:
+In a REST API, everything is considered a resource, which can be a
+physical object, a piece of data, or an abstract concept. Resources are
+identified by URLs (Uniform Resource Locators).
+2. HTTP Methods:
+REST APIs use standard HTTP methods to perform CRUD (Create, Read,
+Update, Delete) operations on resources. The common HTTP methods
+used in REST are:
+GET: Retrieve data from a resource.
+POST: Create a new resource.PUT: Update an existing resource.
+DELETE: Remove a resource.
+These methods correspond to the operations that can be performed on
+resources.
+3. Stateless:
+REST is a stateless architecture, which means that each request from a
+client to a server must contain all the information needed to understand
+and process the request. There is no session state stored on the server
+between requests.
+4. Uniform Interface:
+REST APIs have a uniform and consistent interface. They use standard
+conventions for resource naming, HTTP methods, and data formats. This
+uniformity simplifies client-server communication and makes it more
+predictable.
+5. Representation:
+Resources can have multiple representations, such as JSON, XML, HTML,
+or other formats. Clients can request the representation they prefer by
+specifying the "Accept" header in the HTTP request.
+6. Statelessness:
+In REST, the server does not store any client state. Each request must
+contain all the information needed for the server to understand and
+process it. This makes REST APIs scalable and easy to maintain.
+7. HATEOAS (Hypermedia as the Engine of Application State):
+HATEOAS is a constraint of REST that suggests including hyperlinks
+within the response to guide clients on how to navigate the API. This
+makes the API self-descriptive and allows clients to discover and interact
+with resources dynamically.8. Status Codes:
+REST APIs use standard HTTP status codes to indicate the outcome of a
+request, such as 200 (OK), 201 (Created), 404 (Not Found), 401
+{Unauthorized), and others.
+REST APIs are widely used for building web services and are the foundation of
+many web and mobile applications. They provide a scalable, efficient, and
+standard way to expose and interact with resources over the internet, allowing
+systems to communicate and exchange data in a flexible and interoperable
+manner.
+Introduction to jQuery
+What is jQuery?
+« jQuery is a popular JavaScript library designed to simplify web development.
+» It's an open-source library that simplifies HTML document manipulation, event handling,
+animations, and asynchronous requests (AJAX).
+Why Use jQuery?
+» jQuery simplifies complex JavaScript tasks.
+» It provides a concise and efficient way to interact with HTML elements.
+» Cross-browser compatibility: jQuery abstracts browser differences and ensures consistent
+behavior,
+» Alarge community and extensive documentation make it easy to find help and resources.
+jQuery Syntax
+re Dollar Sign
+» jQuery uses the [§ symbol as an alias for the [jQuery| object. [t simplifies the syntax.
+«To use jQuery, include it in your HTML document by adding a reference to the jQuery library.
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+[Basic Syntax
++ The basic syntax consists of selecting HTML elements and applying actions to them.
+* jQuery code typically starts within a |$ (document) . ready ()| function, ensuring that it runs
+when the document is fully loaded.Bleiscunsnil] Jreadhllivnct ion i
+[rz Skomeay Gods éoee
+J) 3
+jQuery Selectors
+Selecting Elements
+« jQuery provides a wide range of selectors to target HTML elements.
+« Selectors are similar to CSS selectors, making them familiar to web developers.
+V7 ERIEEE full $5 QUEERS
+VERGE QIGTRGS GE & SPREE @Ees
+Blir-mciassi]
+V7 EENCER £6 CUCTARR 1KY7 10)
+jQuery Events
+[vert Handling
+» jQuery simplifies event handling in web applications.
++ You can attach event handlers to HTML elements, responding to user interactions.
+Birswecem deen liEweeisni
+OEE swear cries ia
+.
+(common Events
+» jQuery supports various common events like click, hover, keypress) submit, and more.
+» Event handling in jQuery is efficient and cross-browser compatible.
+jQuery Animation and Effects
+Introduction to Animation
+« jQuery provides a wide range of methods to create animations and effects on HTML
+elements,
+» These animations enhance the user experience by providing smooth transitions and visual
+feedback.hide ()|and [show () |
+o The hide ()| method is used to hide selected elements.
+o Thelshow (}| method is used to display hidden elements.
+V7 Hdl all <P elenonkd
+Eire Jere 4
+V7 Shey all <Ghiv> elememisd
+Bras va Jehoaf 4
+|raceout ()] and [Faden ()|
++ [Fadeout ()| method gradually decreases the opacity of selected elements to hide them.
++ [fadeIn(}| method increases the opacity to show hidden elements.
+V7 BER GER & GET CIE
+V7 BEG iE &h Meer
+.
+|s1iceup ()] and |slideDown ()|
+» slideUp ()| method animates the vertical height to hide selected elements.
+* slideDown ()| method does the opposite, animating the vertical height to show hidden
+elements,
+V7 BGGR 99 &
+Biren dsrieeu=iii
+Elir crememm ii Jo tcarssalilia
+|enimate ()] |
+* The lanimate ()| method allows custom animations by specifying properties and their target
+values.
+[IEEE JPzomzid
+DereeitB ESAnimation Control
+stop 0]
+o Thelstop ()| method is used to halt ongoing animations on selected elements.
+It prevents animation queues from building up.
+ER 8 FREER
+Blips emi JE cRlisunet eal] 1
+[ SUrEET JEEesig
+Callback Functions
+callback (}|
+«A callback function is a function that is executed after an animation or operation is
+completed.
+« Callbacks are useful for executing code sequentially or handling events following the
+completion of a task.
+| /@: xccutecodefatic iitadinglioutangelenent]
+(IR
+[EElrrnimecien commie]
+Method Chaining
+Chaining
+» Method chaining is a technique in jQuery where multiple methods can be chained together,
+operating on the same set of elements.
+» It results in more concise and readable code.
+* BE ERE JST]

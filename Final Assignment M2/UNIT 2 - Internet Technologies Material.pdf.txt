@@ -1,0 +1,1073 @@
+UNIT II
+CSS [CASCADING STYLE SHEET]CSS INTRODUCTION
+CSS is the language we use to style a Web page..
+What is CSS?
+o CSS stands for Cascading Style Sheets
+o CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+o CSS saves a lot of work. It can control the layout of multiple web pages all at once
+o External stylesheets are stored in CSS files
+Why Use CSS?
+CSS is used to define styles for your web pages, including the design, layout and variations in display for
+different devices and screen sizes.
+CSS Solved a Big Problem
+HTML was NEVER intended to contain tags for formatting a web page!
+HTML was created to describe the content of a web page, like:
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a
+nightmare for web developers. Development of large websites, where fonts and color information were
+added to every single page, became a long and expensive process.
+To solve this problem, the World Wide Web Consortium {(W3C} created CSS.
+CSS removed the style formatting from the HTML page!
+CSS Saves a Lot of Work!
+The style definitions are normally saved in external .css files.
+With an external stylesheet file, you can change the look of an entire website by changing just one file!
+How to add CSS
+CSS is added to HTML pages to format the document according to information in the style sheet. There
+are three ways to insert CSS in HTML documents.
+1. Inline CSS
+2. Internal CSS
+3. External CSS1) Inline €SS: Inline CSS is used to apply CSS on a single line or element.
+Element
+J
+~~ ~~
+Attribute
+A
+~ ~
+Auribuze Astribute
+name value
+<a href=“contact.html” > Contact us </a>
+~
+~ ~ Y =
+Opening Tag Content Closing Tag
+Example
+<p style="color:blug">Hello CSS</p>
+2) Internal CSS
+Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page.
+It is written inside the style tag within head section of html.
+Example
+<style>
+p{color:blue}
+</style>
+3) External CSS
+External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css
+file. Its extension must be .css for example style.css.
+Example
+You need to link style.css file to your html pages like this:
+<link rel="stylesheet" type="text/css" href="style.css">CSS PROPERTIES AND STYLING
+CSS BACKGROUND
+CSS background property is used to define the background effects on element. There are 5 CSS
+background properties that affects the HTML elements:
+1. background-color
+2. background-image
+3. background-repeat
+4. background-attachment
+5. background-position
+1) €SS background-color:
+The background-color property is used to specify the background color of the element.
+Example:
+<IDOCTYPE html>
+<html>
+<head>
+<title>background-color property</title>
+<style>
+body { text-align:center; background-color: lightblue; }
+h1{ color: blue; }
+</style>
+</head>
+<body>
+<h1>Hello World.</h1>
+<h1>Welcome to the javaTpoint.com</h1>
+</body>
+</html>
+2) CSS background-image
+The background-image property is used to set an image as a background of an element. By default the
+image covers the entire element.
+Example
+<IDOCTYPE html>
+<html>
+<head><style>
+body { background-image: url{"paper.gif"); }
+</style>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p>This page has an image as the background!</p>
+</body>
+</html>
+3) €SS background-repeat
+By default, the background-image property repeats the background image horizontally and vertically.
+Some images are repeated only horizontally or vertically.
+Example
+body { background-image: url("gradient_bg.png"); background-repeat: repeat-x; }
+body { background-image: url("gradient_bg.png"); background-repeat: repeat-y; }
+PROGRAM
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+body { background-image: url{"gradient-bg.png"}; background-repeat: repeat-x;}
+</style>
+</head>
+<body>
+<h1>Hello Javatpoint.com</h1>
+</body>
+</html>
+4) €SS background-attachment
+The background-attachment property is used to specify if the background image is fixed or scroll with
+the rest of the page in browser window. If you set fixed the background image then the image will not
+move during scrolling in the browser.
+Example
+background-repeat: no-repeat;
+background-attachment: fixed;PROGRAM
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+body { background: white url('bbb.gif'); background-repeat: no-repeat; background-attachment:
+no-repeat; margin-left:200px; }
+</style>
+</head>
+<body>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>If you do not see any scrollbars, Resize the browser window.</p>
+</body>
+</html>
+5) CSS background-position
+The background-position property is used to define the initial position of the background image. By
+default, the background image is placed on the top-left of the webpage.
+You can set the following positions:
+1. center
+2. top
+3. bottom
+4. left
+5. rightExample
+background-position: center;
+PROGRAM
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+body { background: white url{'good-morning.jpg'); background-repeat: no-repeat;
+background-attachment: fixed; background-position: center; }
+</style>
+</head>
+<body>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>This is a fixed background-image. Scroll down the page.</p>
+<p>If you do not see any scrollbars, Resize the browser window.</p>
+</body>
+</html>CSS CURSOR
+It is used to define the type of mouse cursor when the mouse pointer is on the element. It allows us to
+specify the cursor type, which will be displayed to the user. When a user hovers on the link, then by
+default, the cursor transforms into the hand from a pointer.
+Let's understand the property values of the cursor.
+| Values | Usage |
+| alias | It is used to display the indication of the cursor of something that is to be created. |
+| auto | It is the default property in which the browser sets the cursor. |
+| all-scroll | It indicates the scrolling. |
+| col-resize | Using it, the cursor will represent that the column can be horizontally resized. |
+| cell | The cursor will represent that a cell or the collection of cells is selected. |
+context- It indicates the availability of the context menu.
+| menu | |
+| default | It indicates an arrow, which is the default cursor. |
+| copy | It is used to indicate that something is copied. |
+| crosshair | In it, the cursor changes to the crosshair or the plus sign. |
+e-resize It represents the east direction and indicates that the edge of the box is to be shifted
+| | towards right. |
+| ew-resize | It represents the east/west direction and indicates a bidirectional resize cursor. |
+n-resize It represents the north direction that indicates that the edge of the box is to be shifted
+| | to up. |
+ne-resize It represents the north/east direction and indicates that the edge of the box is to be
+| | shifted towards up and right. |
+| move | It indicates that something is to be shifted. |
+| help | It is in the form of a question mark or ballon, which represents that help is available. |
+| None | It is used to indicate that no cursor is rendered for the element. |
+| No-drop | It is used to represent that the dragged item cannot be dropped here. |
+| s-resize | It indicates an edge box is to be moved down. It indicates the south direction. |
+| Row-resize | It is used to indicate that the row can be vertically resized. |
+Se-resize It represents the south/east direction, which indicates that an edge box is to be moved
+| | down and right. |
+Sw-resize It represents south/west direction and indicates that an edge of the box is to be shifted
+| | towards down and left. |
+| Wait | It represents an hourglass. |
+| <url> | It indicates the source of the cursor image file. |
+w-resize It indicates the west direction and represents that the edge of the box is to be shifted
+| [oe |
+| Zoom-in | It is used to indicate that something can be zoomed in. |
+| Zoom-out | It is used to indicate that something can be zoomed out. |Example
+cursor:alias;
+cursor:auto;
+cursor:all-scroll;
+cursor:col-resize;
+cursor:crosshair;
+cursor:default;
+cursor:copy;
+cursor:pointer;
+cursor:move;
+cursor:e-resize;
+cursor:ew-resize;
+cursor:ne-resize;
+cursor:nw-resize;
+cursor:n-resize;
+cursor:se-resize;
+cursor:sw-resize;
+cursor:s-resize;
+cursor:w-resize;
+cursor:text;
+cursor:wait;
+cursor:help;
+cursor:progress;
+cursor:no-drop;
+cursor:not-allowed;
+cursor:vertical-text;
+cursor:zoom-in;
+cursor:zoom-out;PROGRAM
+<html>
+<head>
+</head>
+<style>
+body { background-color: lightblue; color:green; text-align: center; font-size: 20px; }
+</style>
+<body>
+<p>Move your mouse over the below words for the cursor change.</p>
+<div style = "cursor:alias">alias Value</div>
+<div style = "cursor:auto">auto Value</div>
+<div style = "cursor:all-scroll">all-scroll value</div>
+<div style = "cursor:col-resize">col-resize value</div>
+<div style = "cursor:crosshair">Crosshair</div>
+<div style = "cursor:default">Default value</div>
+<div style = "cursor:copy™>copy value</div>
+<div style = "cursor:pointer">Pointer</div>
+<div style = "cursor:move">Move</div>
+<div style = "cursor:e-resize”">e-resize</div>
+<div style = "cursor:ew-resize">ew-resize</div>
+<div style = "cursor:ne-resize">ne-resize</div>
+<div style = "cursor:nw-resize">nw-resize</div>
+<div style = "cursor:n-resize">n-resize</div>
+<div style = "cursor:se-resize">se-resize</div>
+<div style = "cursor:sw-resize">sw-resize</div>
+<div style = "cursor:s-resize">s-resize</div>
+<div style = "cursor:w-resize">w-resize</div>
+<div style = "cursor:text">text</div>
+<div style = "cursor:wait">wait</div>
+<div style = "cursor:help">help</div>
+<div style = "cursor:progress™>Progress</div>
+<div style = "cursor:no-drop™>no-drop</div>
+<div style = "cursor:not-allowed">not-allowed</div>
+<div style = "cursor:vertical-text">vertical-text</div>
+<div style = "cursor:zoom-in">Zoom-in</div>
+<div style = "cursor:zoom-out">Zoom-out</div>
+</body>
+</html>CSS BUTTONS
+In HTML, we use the button tag to create a button, but by using CSS properties, we can style the buttons.
+Buttons help us to create user interaction and event processing. They are one of the widely used elements
+of web pages.
+Basic styling in Buttons
+* background-color: red;
+* border:5px red groove;
+* border-radius: 7px;
+* box-shadow : 0 8px 16px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19};
+* padding: 16px;
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<title> button background Color </title>
+<style>
+Body { text-align: center; }
+button { color:lightgoldenrodyellow; font-size: 30px; }
+.b1 { background-color: red; border:none; }
+.b2 { background-color: blue; border:5px brown solid; }
+.b3 { background-color: yellow; color:black; border:5px red groove; }
+.b4{ background-color:orange; border: Spx red dashed; }
+.bS{ background-color: gray; border: 5px black dotted; }
+.b6{ background-color: lightblue; border:Spx blue double; }
+</style>
+</head>
+<body>
+<h1>The border property</h1>
+<button class="b1">none</button>
+<button class="b2">solid</button>
+<button class="b3">groove</button>
+<button class="b4">dashed</button>
+<button class="b5">dotted</button>
+<button class="b6">double</button>
+</body>
+</html>CSS FLOAT
+The CSS float property is a positioning property. It is used to push an element to the left or right, allowing
+other element to wrap around it. It is generally used with images and layouts.
+200 7
+EE +10 || eB ]
+| Float Left Legon
+: © Floar Right
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+img { float: right; }
+</style>
+</head>
+<body>
+<p>The following paragraph contains an image with style <b>float:right</b>. The result is
+that the image will float to the right in the paragraph.</p>
+<img src="good-morning.jpg" alt="Good Morning Friends"/>
+<p>This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+</body>
+</html>CSS FONT
+CSS Font property is used to control the look of texts. By the use of CSS font property you can change the
+text size, color, style and more.
+These are some important font attributes:
+1. CSS Font color: This property is used to change the color of the text. (standalone attribute)
+2. CSS Font family: This property is used to change the face of the font.
+3. CSS Font size: This property is used to increase or decrease the size of the font.
+4. CSS Font style: This property is used to make the font bold, italic or oblique.
+5. CSS Font variant: This property creates a small-caps effect.
+6. CSS Font weight: This property is used to increase or decrease the boldness and lightness of the
+font.
+1. CSS Font Color
+CSS font color is a standalone attribute in CSS although it seems that it is a part of CSS fonts. It is used to
+change the color of the text.
+There are three different formats to define a color:
+* Bya color name
+o By hexadecimal value
++ ByRGB
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+body { font-size: 100%; }
+hi{color:red;}
+h2 { color: #9000A1; }
+p { color:rgh(0, 220, 98}; }
+</style>
+</head>
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+</body>
+</html>2. Font Family
+In CSS there are five generic font families:
+1. Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and
+elegance. (Example: Times New Roman, Georgia, Garamond)
+2. Sans-serif fonts have clean lines (no small strokes attached). They create a modern and
+minimalistic look. (Example: Arial, Verdana, Helvetica)
+3. Monospace fonts - here all the letters have the same fixed width. They create a mechanical
+look. (Example: Courier New, Lucida Console, Monaco)
+4. Cursive fonts imitate human handwriting. (Example: Brush Script MT, Lucida Handwriting}
+5. Fantasy fonts are decorative/playful fonts. (Example: Copperplate, Papyrus)
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+body { font-size: 100%; }
+h1 { font-family: sans-serif; }
+h2 { font-family: serif; }
+h3 { font-family: Cursive; }
+h4 { font-family: Fantasy; }
+p { font-family: monospace; }
+</style>
+</head>
+<body>
+<h1>This heading is shown in sans-serif.</h1>
+<h2>This heading is shown in serif.</h2>
+<p>This paragraph is written in monospace.</p>
+<h3>This heading is shown in sans-serif.</h3>
+<h4>This heading is shown in serif.</h4>
+</body>
+</html>3. CSS Font Size
+CSS font size property is used to change the size of the font.
+| Font Size Value | Description |
+| xx-small | used to display the extremely small text size. |
+| x-small | used to display the extra small text size. |
+| small | used to display small text size. |
+| medium | used to display medium text size. |
+| large | used to display large text size. |
+| x-large | used to display extra large text size. |
+| xx-large | used to display extremely large text size. |
+| smaller | used to display comparatively smaller text size. |
+| larger | used to display comparatively larger text size. |
+| size in pixels or % | used to set value in percentage or in pixels. |
+Example
+<html>
+<head>
+<title>Practice CSS font-size property</title>
+</head>
+<body>
+<p style="font-size:xx-small;"> This font size is extremely small.</p>
+<p style="font-size:x-small;"> This font size is extra small</p>
+<p style="font-size:small;"> This font size is small</p>
+<p style="font-size:medium;"> This font size is medium. </p>
+<p style="font-size:large;"> This font size is large. </p>
+<p style="font-size:x-large;"> This font size is extra large. </p>
+<p style="font-size:xx-large;"> This font size is extremely large. </p>
+<p style="font-size:smaller;"> This font size is smaller. </p>
+<p style="font-size:larger;"> This font size is larger. </p>
+<p style="font-size:200%;"> This font size is set on 200%. </p>
+<p style="font-size:20px;"> This font size is 20 pixels. </p>
+</body>
+</html>4. CSS Font Style
+CSS Font style property defines what type of font you want to display. It may be italic, oblique, or normal.
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+body { font-size: 100%; }
+h2 { font-style: italic; }
+h3 { font-style: oblique; }
+h4 { font-style: normal; }
+</style>
+</head>
+<body>
+<h2>This heading is shown in italic font.</h2>
+<h3>This heading is shown in oblique font.</h3>
+<h4>This heading is shown in normal font.</h4>
+</body>
+</html>
+5. CSS Font Variant
+CSS font variant property specifies how to set font variant of an element. It may be normal and small-
+caps.
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+p { font-variant: small-caps; }
+h3 { font-variant: normal; }
+</style>
+</head>
+<body>
+<h3>This heading is shown in normal font.</h3>
+<p>This paragraph is shown in small font.</p>
+</body>
+</html>6. CSS Font Weight
+CSS font weight property defines the weight of the font and specify that how bold a font is. The possible
+values of font weight may be normal, bold, bolder, lighter or number (100, 200..... upto 900}.
+Example
+<IDOCTYPE html>
+<html>
+<body>
+<p style="font-weight:bold;">This font is bold.</p>
+<p style="font-weight:bolder;">This font is bolder.</p>
+<p style="font-weight:lighter;">This font is lighter.</p>
+<p style="font-weight:100;">This font is 100 weight.</p>
+<p style="font-weight:200;">This font is 200 weight.</p>
+<p style="font-weight:300;">This font is 300 weight.</p>
+<p style="font-weight:400;">This font is 400 weight.</p>
+<p style="font-weight:500;">This font is S00 weight.</p>
+<p style="font-weight:600;">This font is 600 weight.</p>
+<p style="font-weight:700;">This font is 700 weight.</p>
+<p style="font-weight:800;">This font is 800 weight.</p>
+<p style="font-weight:900;">This font is 900 weight.</p>
+</body>
+</html>CSS COLORS
+The color property in CSS is used to set the color of HTML elements. Typically, this property is used to set
+the background color or the font color of an element.
+In CSS, we use color values for specifying the color. We can also use this property for the border-color and
+other decorative effects.
+We can define the color of an element by using the following ways:
+1. RGB format.
+2. RGBA format.
+3. Hexadecimal notation.
+4. HSL.
+5. HSLA.
+6. Built-in color.
+1. RGB Format
+RGB format is the short form of 'RED GREEN and BLUE' that is used for defining the color of
+an HTML element simply by specifying the values of R, G, B that are in the range of 0 to 255.
+The color values in this format are specified by using the rgb() property. This property allows three values
+that can either be in percentage or integer (range from 0 to 255).
+Example
+rgb(238,130,238);
+2. RGBA Format
+It is almost similar to RGB format except that RGBA contains A (Alpha) that specifies the element's
+transparency. The value of alpha is in the range 0.0 to 1.0, in which 0.0 is for fully transparent, and 1.0 is
+for not transparent.
+Example
+rgha(23,67,88,0.5);
+3. Hexadecimal notation
+Hexadecimal can be defined as a six-digit color representation. This notation starts with the #
+symbol followed by six characters ranges from 0 to F. In hexadecimal notation, the first two digits
+represent the red {RR} color value, the next two digits represent the green {GG) color value, and the last
+two digits represent the blue (BB) color value.The black color notation in hexadecimal is #000000, and the white color notation in hexadecimal is
+#FFFFFF. Some of the codes in hexadecimal notation are #FF0000, #00FF00, #0000FF, #FFFF00, and many
+more.
+Example
+color:#EEB2EE;
+4. HSL
+It is a short form of Hue, Saturation, and Lightness. Let's understand them individually.
+Hue: It can be defined as the degree on the color wheel from 0 to 360. 0 represents red, 120 represents
+green, 240 represents blue.
+Saturation: It takes value in percentage in which 100% represents fully saturated, i.e., no shades of gray,
+50% represent 50% gray, but the color is still visible, and 0% represents fully unsaturated, i.e., completely
+gray, and the color is invisible.
+Lightness: The lightness of the color can be defined as the light that we want to provide the color in which
+0% represents black (there is no light}, 50% represents neither dark nor light, and 100% represents white
+(full lightness).
+Example
+color:hsl{0,50%,50%);
+I ut 30°
+0% SATURATION 100%
+0% LIGHTNESS / BRIGHTNESS 100%5. HSLA
+It is entirely similar to HSL property, except that it contains A (alpha) that specifies the element's
+transparency. The value of alpha is in the range 06.0 to 1.6, in which 0.0 indicates fully transparent,
+and 1.0 indicates not transparent.
+Example
+color:hsla(0,50%,50%,0.5);
+Hue:
+— ee Qi 3
+Saturation:
+4 o— 3
+Lightness:
+Co oO
+Alpha:
+To oT a ~© | hela(180, 50%, 50%, 100%) |
+Built-in Colors
+| S.no. | Color name | Hexadecimal Value | Decimal Value or rgh() value |
+| 1 | Red | #FFO000 | rgh(255,0,0) |
+| 2. | Orange | H#FFAS00 | rgh(255,165,0) |
+| 3. | Yellow | H#FFFFO0 | rgh(255,255,0) |
+| a | Pink | #FFCOCB | rgb(255,192,203) |
+| 5. | Green | #008000 | rgb(0,128,0) |
+| 6. | Violet | #EES2EE | rgh{238,130,238} |
+| 7. | Blue | #0000FF | 1gb(0,0,255) |
+| 3. | Aqua | HOOFEFF | rgb(0,255,255) |
+| 9. | Brown | #AS2A2A | rgb(165,42,42) |
+| 10. | White | HFEFEFE | rgb(255,255,255) |
+| 11. | Gray | #808080 | rgb(128,128,128) |
+| 12. | Black | #000000 | 1gb(0,0,0) |Example
+<html>
+<head>
+<title>CSS hsl color property</title>
+<style>
+h1{ text-align:center; }
+#rgb{ color:rgb(255,0,0); }
+#rgba{ color:rgha(255,0,0,0.5); }
+#hex{ color:#EE82EE; }
+#short{ color: #ESE; }
+#thsl{ color:hsl{0,50%,50%); }
+tthsla{ color:hsla{0,50%,50%,0.5); }
+#built{ color:green; }
+</style>
+</head>
+<body>
+<h1 id="rgh"> Hello World. This is RGB format. </h1>
+<h1 id="rgba"> Hello World. This is RGBA format. </h1>
+<h1id="hex"> Hello World. This is Hexadecimal format. </h1>
+<h1id="short"> Hello World. This is Short-hexadecimal format. </h1>
+<h1id="hsl"> Hello World. This is HSL format. </h1>
+<h1 id="hsla"> Hello World. This is HSLA format. </h1>
+<h1 id="built"> Hello World. This is Built-in color format. </h1>
+</body>
+</html>CSS Opacity
+The CSS opacity property is used to specify the transparency of an element. In simple word, you can say
+that it specifies the clarity of the image.
+opacity opacity opacity opacity opacity
+10 0g 08 07 0.8
+opacity opacity opaciTy ornely
+0s 04 0.3 0c
+How to apply CSS opacity setting
+Opacity setting is applied uniformly across the entire object and the opacity value is defined in term of
+digital value less than 1. The lesser opacity value displays the greater opacity. Opacity is not inherited.
+PROGRAM
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+img.trans { opacity: 0.4;}
+</style>
+</head>
+<body>
+<p>Normal Image</p>
+<img sre="rose.jpg" alt="normal rose">
+<p>Transparent Image</p>
+<img class="trans" src="rose.jpg" alt="transparent rose">
+</body>
+</html>CSS id & class - [SELECTORS]
+The selectors in CSS are part of the CSS ruleset and used to select the content we want to style. Id and
+class both are the CSS element selectors and are used to identify an element based on its assigned name.
+CSS id and class selectors are the most used selectors in CSS.
+During the use of selectors, sometimes there is confusion occurs between id and class. Both of them do
+not have any default styling information; they require CSS to select them and apply it to style. Although
+both are used for selecting the element, they are different from each other in many ways.
+The difference between the id and class is tabulated as follows.
+| Class | Id |
+We can apply a class to various elements so that it The Id is unique in a page, and we can only
+could be numerous times on a single page. apply it to one specific element.
+The class is assigned to an element and its name starts | The name of the Id starts with the "#"
+with "." followed by the name of the class. symbol followed by a unique id name.
+. We can attach only one ID selector to an
+We can attach multiple class selectors to an element.
+element.
+Syntax: Syntax:
+.class{ #id{
+// declarations of CSS // declarations of CSS
+} }
+ID Selector
+The id selector is used to select the id attribute of an HTML element for selecting a particular element. An
+id is always unique within the page, so it is chosen to select a single, unique element.
+It is written with the hash character (#), followed by the id of the element.
+The example of the id selector is given as follows.
+Example
+In this example, we are selecting the element with the id "para".
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+#para { text-align: center; color: blue; font-size: 25px; background-color: pink; }
+</style>
+</head>
+<body>
+<h1> Welcome to the Javatpoint.com </h1><p id = "para">This paragraph will be affected.</p>
+<p>This paragraph will not be affected.</p>
+</body>
+</html>
+Class Selector
+The class selector is used to select the HTML elements with a specific class attribute. It is written with a
+period character. {Full stop symbol) followed by the class name. A class name should not be started with
+a number.
+Example
+In this example, we are selecting the elements with the class "example".
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+example { text-align: center; color: blue; font-size: 25px; }
+</style>
+</head>
+<body>
+<h1 class="example">This heading is blue and center-aligned.</h1>
+<p class="example">This paragraph is blue and center-aligned.</p>
+</body>
+</html>
+CSS Class Selector for a specific element
+We can also style the specific element using the class selector, no matter if it is applied to different
+elements.
+If we need to specify that only one specific HTML element should be affected, we must use the element
+name with the class selector.
+It will be clear from the following example.
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+p.example { text-align: center; color: blue; font-size: 25px; }</style>
+</head>
+<body>
+<h1 class="example">This heading is not effected.</h1>
+<p class="example">This paragraph is blue and center-aligned.</p>
+</body>
+</html>
+There is another example in which we apply multiple classes on the same element. Let's see an illustration
+of the same.
+Example
+In this example, we are using two classes {example and para) on the paragraph element and styling the
+paragraph using both classes.
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+.example { text-align: center; color: red; font-size: 1cm; }
+.para{ font-family: Lucida Calligraphy; text-shadow: 5px 8px 9px yellow; }
+</style>
+</head>
+<body>
+<h1 class="example">This heading is red and center-aligned.</h1>
+<p class="example para">This paragraph is red and center-aligned with a font-family "Lucida
+Calligraphy" and text-shadow.</p>
+</body>
+</html>CSS Box Model
+The components that can be depicted on the web page consist of one or more than one rectangular box.
+A CSS box model is a compartment that includes numerous assets, such as edge, border, padding and
+material. It is used to develop the design and structure of a web page. It can be used as a set of tools to
+personalize the layout of different components. According to the CSS box model, the web browser
+supplies each element as a square prism.
+The following diagram illustrates how the CSS properties of width, height, padding, border and margin
+dictate that how much space an attribute will occupy on a web page.
+: 1 margin-tap :
+: 1 border-tap
+: 1 padding tap :
+Pols
+: = 1 | ;
+te |S | width 5 :
+VEE :
+Ee | BE :
+HE = | |
+| < ;
+PE % | height Neo g :
+= — a ¢ E en!
+: we HEIER
+&™ 212s
+: HES
+2 |®
+: 1 padding battom :
+: 1 border-bottom
+; 1 margin-batborm
+The CSS box model contains the different properties in CSS. These are listed below.
+Border - It is a region between the padding-box and the margin. Its proportions are determined by the
+width and height of the boundary.
+Margin - This segment consists of the area between the boundary and the edge of the border. The
+proportion of the margin region is equal to the margin-box width and height. It is better to separate the
+product from its neighbor nodes.
+Padding - This field requires the padding of the component. In essence, this area is the space around the
+subject area and inside the border-box. The height and the width of the padding box decide its
+proportions.Content - Material such as text, photographs, or other digital media is included in this area. It is
+constrained by the information edge, and its proportions are dictated by the width and height of the
+content enclosure.
+ELEMENTS OF THE WIDTH AND HEIGHT
+Typically, when you assign the width and height of an attribute using the CSS width and height assets, it
+means you just positioned the height and width of the subject areas of that component. The additional
+height and width of the unit box is based on a range of influences.
+The specific area that an element box may occupy on a web page is measured as follows-
+| Size of the | Properties of CSS |
+box
+| Height | height + padding-top + padding-bottom + border-top + border-bottom + margin-top + |
+margin-bottom
+| Width | width + padding-left + padding-right + border-left + border-right + margin-left + margin- |
+right
+Example
+<IDOCTYPE html>
+<html>
+<head>
+<title>CSS Box Model</title>
+<style>
+main { font-size:30px; font-weight:bold; Text-align:center; }
+.gfg { margin-left:50px; border:50px solid Purple; width:300px; height:200px;
+text-align:center; padding:50px; }
+.gfgl { font-size:40px; font-weight:bold; color:black; margin-top:0px;
+background-color:purple; }
+.gfg2 { font-size:20px; font-weight:bold; background-color:white; }
+</style>
+</head>
+<body>
+<div class = "main">CSS Box-Model Property</div>
+<div class = "gfg">
+<div class = "gfgl">JavaTpoint</div>
+<div class = "gfg2">A best portal for learn Technologies</div>
+</div>
+</body>
+</html>CSS Navigation bar
+A Navigation bar or navigation system comes under GUI that helps the visitors in accessing information.
+It is the Ul element on a webpage that includes links for the other sections of the website.
+A navigation bar is mostly displayed on the top of the page in the form of a horizontal list of links. It can
+be placed below the logo or the header, but it should always be placed before the main content of the
+webpage.
+It is important for a website to have easy-to-use navigation. It plays an important role in the website as it
+allows the visitors to visit any section quickly.
+1. Horizontal Navigation Bar
+The horizontal navigation bar is the horizontal list of links, which is generally on the top of the page.
+Let's see how to create a horizontal navigation bar by using an example.
+Example
+In this example, we are adding the overflow: hidden property that prevents the li elements from going
+outside of the list, display: block property displays the links as the block elements and makes the entire
+link area clickable.
+We are also adding the float: left property, which uses float for getting the block elements to slide them
+next to each other.
+If we want the full-width background color then we have to add the background-color property
+to <ul> rather than the <a> element.
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+ul { list-style-type: none; margin: 0; padding: Opx; overflow: hidden; background-color:
+lightgray; }
+li { float: left; }
+li a { display: block; color: blue; font-size:20px; text-align: center; padding: 10px 20px;
+text-decoration: none; }
+.active { background-color: gray; color: white; }
+Ii a:hover { background-color: orange; color: white; }
+<[style>
+</head>
+<body>
+<ul>
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#">Java</a></li><li><a href="#">HTML</a></li>
+<li><a href="#">CSS</a></li>
+<ful>
+</body>
+</html>
+2. Vertical Navigation Bar
+In this example, we are going to see how to build a vertical navigation bar.
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+ul { list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: lightblue;
+border: 1px solid blue; }
+li a { display: block; color: blue; font-size:20px; padding: 10px 20px; text-decoration: none;
+border-bottom: 1px solid blue; }
+ul:last-child { border-bottom: none; }
+.active{ background-color: orange; color: white; }
+li a:hover { background-color: orange; color: white; }
+<[style>
+</head>
+<body>
+<h2>Vertical Navigation Bar</h2>
+<ul>
+<li><a href="#" class = "active">Home</a></li>
+<li><a href = "#">Java</a></li>
+<li><a href = "#">CSS</a></li>
+<li><a href = "#">HTML</a></li>
+<li><a href = "#">Bootstrap</a></li>
+</ul>
+</body>
+</html>CSS MARGIN
+CSS Margin property is used to define the space around elements. It is completely transparent and doesn't
+have any background color. It clears an area around the element.
+Top, bottom, left and right margin can be changed independently using separate properties. You can also
+change all properties at once by using shorthand margin property.
+There are following CSS margin properties:
+CSS Margin Properties
+| Property | Description |
+| margin | This property is used to set all the properties in one declaration. |
+| margin-left | itis used to set left margin of an element. |
+| margin-right | It is used to set right margin of an element. |
+| margin-top | It is used to set top margin of an element. |
+| margin-bottom | It is used to set bottom margin of an element. |
+CSS Margin Values
+These are some possible values for margin property.
+| Value | Description |
+| auto | This is used to let the browser calculate a margin. |
+| length | It is used to specify a margin pt, px, cm, etc. its default value is Opx. |
+| % | It is used to define a margin in percent of the width of containing element. |
+| inherit | It is used to inherit margin from parent element. |
+Note: You can also use negative values to overlap content.
+Example
+You can define different margin for different sides for an element.
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+p { background-color: pink; }
+p.ex { margin-top: 50px; margin-bottom: 50px; margin-right: 100px; margin-left: 100px; }
+</style>
+</head>
+<body>
+<p>This paragraph is not displayed with specified margin. </p>
+<p class="ex">This paragraph is displayed with specified margin.</p>
+</body>
+</html>CSS BORDER
+The CSS border is a shorthand property used to set the border on an element.
+The CSS border properties are use to specify the style, color and size of the border of an element. The CSS
+border properties are given below
+1. border-style
+2. border-color
+3. border-width
+4. border-radius
+5. border-collapse
+6. border-spacing property
+1. CSS border-style
+The Border style property is used to specify the border type which you want to display on the web page.
+Example
+p {border-style: none;}
+p {border-style: dotted;}
+p {border-style: dashed;}
+p {border-style: solid;}
+p {border-style: double;}
+p {border-style: groove;}
+p {border-style: ridge;}
+p {border-style: inset;}
+p {border-style: outset;}
+p {border-style: hidden;}
+PROGRAM
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+p.one { border-style: solid; border-color: red; }
+p.two { border-style: solid; border-color: #98bf21; }</style>
+</head>
+<body>
+<p class="one">This is a solid red border</p>
+<p class="two">This is a solid green border</p>
+</body>
+</html>
+2. CSS border-width
+The border-width property is used to set the border's width. It is set in pixels. You can also use the one of
+the three pre-defined values, thin, medium or thick to set the width of the border. The border-width
+property is not used alone. It is always used with other border properties like "border-style" property to
+set the border first otherwise it will not work.
+Example
+border-width: Spx;
+3. CSS border-color
+There are three methods to set the color of the border.
+* Name: It specifies the color name. For example: "red".
+* RGB: It specifies the RGB value of the color. For example: "rgh(255,0,0)".
+* Hex: lt specifies the hex value of the color. For example: "#ff0000".
+There is also a border color named "transparent™. If the border color is not set it is inherited from the
+color property of the element. The border-color property is not used alone. It is always used with other
+border properties like "border-style" property to set the border first otherwise it will not work.
+Example
+border-color: red;
+border-color: #98bf21;
+border-color: rgh({255,0,0}
+4. CSS border-radius property
+This CSS property sets the rounded borders and provides the rounded corners around an element, tags,
+or div. lt defines the radius of the corners of an element.Itis shorthand for border top-left-radius, border-top-right-radius, border-bottom-right-radius and border-
+bottom-left-radius. It gives the rounded shape to the corners of the border of an element. We can specify
+the border for all four corners of the box in a single declaration using the border-radius. The values of this
+property can be defined in percentage or length units.
+| Property | Description |
+| border-top-left-radius | It is used to set the border-radius for the top-left corner |
+| border-top-right-radius | It is used to set the border-radius for the top-right corner |
+| border-bottom-right-radius | It is used to set the border-radius for the bottom-right corner |
+| border-bottom-left-radius | It is used to set the border-radius for the bottom-left corner |
+If the bottom-left value is omitted, then it will be same as the top-right. If the value of bottom-right is
+eliminated, then it will be same as the top-left. Similarly, if top-right is eliminated, then it will be the same
+as top-left.
+Let's see what happens when we provide a single value, two values, three values, and four values to this
+property.
+* If we provide a single value (such as border-radius: 30px;} to this property, it will set all corners to
+the same value.
+* When we specify two values (such as border-radius: 20% 10% ;}, then the first value will be used
+for the top-left and bottom-right corners, and the second value will be used for the top-right and
+bottom-left corners.
+* When we use three values (such as border-radius: 10% 30% 20%;) then the first value will be used
+for the top-left corner, the second value will be applied on top-right, and bottom-left corners and
+the third value will be applied to the bottom-right corner.
+* Similarly, when this property has four values {border-radius: 10% 30% 20% 40%;) then the first
+value will be the radius of top-left, the second value will be used for the top-right, the third value
+will be applied on bottom-right, and the fourth value is used for bottom-left.
+Example
+border-radius: 25% 10%;
+5. Border Collapse
+This value is used to collapse the borders into a single border. Using this, two adjacent table cells will share
+a border.
+Example
+border-collapse: collapse;
+PROGRAM
+<IDOCTYPE html>
+<html><head>
+<title> border-collapse property </title>
+<style>
+table{ border: 2px solid blue; text-align: center; font-size: 20px; width: 80%; height: 50%; }
+th{ border: Spx solid red; background-color: yellow; }
+td{ border: Spx solid violet; background-color: cyan; }
+#t1{ border-collapse: collapse; }
+</style>
+</head>
+<body>
+<h1> The border-collapse Property </h1>
+<h2> border-collapse: collapse; </h2>
+<table id = "t1">
+<tr> <th> First_Name </th> <th> Last_Name </th> <th> Subject </th> <th> Marks </th> </tr>
+<tr> <td> James </td> <td> Gosling </td> <td> Maths </td> <td> 92 </td> </tr>
+<tr> <td> Alan </td> <td> Rickman </td> <td> Maths </td> <td> 89 </td> </tr>
+<tr> <td> Sam </td> <td> Mendes </td> <td> Maths </td> <td> 82 </td> </tr>
+</table>
+</body>
+</html>
+6. border-spacing property
+This CSS property is used to set the distance between the borders of the adjacent cells in the table. It
+applies only when the border-collapse property is set to separate. There will not be any space between
+the borders if the border-collapse is set to collapse.
+It can be defined as one or two values for determining the vertical and horizontal spacing.
+* When only one value is specified, then it sets both horizontal and vertical spacing.
+* When we use the two-value syntax, then the first one is used to set the horizontal spacing {i.e.,
+the space between the adjacent columns), and the second value sets the vertical spacing (i.e., the
+space between the adjacent rows).
+Example
+border-spacing: 45px;
+border-spacing: 45px 20px;
+PROGRAM
+<IDOCTYPE html>
+<html>
+<head><title> border-spacing property </title>
+<style>
+table{ border: 2px solid blue; text-align: center; font-size: 20px; background-color: lightgreen; }
+th{ border: Spx solid red; background-color: yellow; }
+td{ border: Spx solid violet; background-color: cyan; }
+#space{ border-collapse: separate; border-spacing: 20pt lem; }
+</style>
+</head>
+<body>
+<h1> The border-spacing Property </h1>
+<h2> horder-spacing: 20pt lem; </h2>
+<table id = "space">
+<tr> <th> First_Name </th> <th> Last_Name </th> <th> Subject </th> <th> Marks </th> </tr>
+<tr> <td> James </td> <td> Gosling </td> <td> Maths </td> <td> 92 </td> </tr>
+<tr> <td> Alan </td> <td> Rickman </td> <td> Maths </td> <td> 89 </td> </tr>
+<tr> <td> Sam </td> <td> Mendes </td> <td> Maths </td> <td> 82 </td> </tr>
+</table>
+</body>
+</html>CSS Padding
+CSS Padding property is used to define the space between the element content and the element border.
+Itis different from CSS margin in the way that CSS margin defines the space around elements. CSS padding
+is affected by the background colors. It clears an area around the content.
+Top, bottom, left and right padding can be changed independently using separate properties. You can also
+change all properties at once by using shorthand padding property.
+CSS Padding Properties
+| Property | Description |
+| padding | It is used to set all the padding properties in one declaration. |
+| padding-left | It is used to set left padding of an element. |
+| padding-right | It is used to set right padding of an element. |
+| padding-top | It is used to set top padding of an element. |
+| padding-bottom | It is used to set bottom padding of an element. |
+CSS Padding Values
+| Value | Description |
+| length | It is used to define fixed padding in pt, px, em etc. |
+| % | It defines padding in % of containing element. |
+PROGRAM
+<IDOCTYPE html>
+<html>
+<head>
+<style>
+p { background-color: pink; }
+p.padding {padding-top: 50px; padding-right: 100px; padding-bottom: 150px; padding-left: 200px; }
+</style>
+</head>
+<body>
+<p>This is a paragraph with no specified padding.</p>
+<p class="padding">This is a paragraph with specified paddings.</p>
+</body>
+</html>
